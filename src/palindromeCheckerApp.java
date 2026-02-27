@@ -1,14 +1,29 @@
-public class PalindromeCheckerApp {
+/**
+ * PalindromeCheckerApp
+ * UC2: Print a Hardcoded Palindrome Result
+ */
 
-    static final String APP_NAME = "Palindrome Checker App";
-    static final String VERSION = "Version 1.0";
+public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("=================================");
-        System.out.println("Welcome to " + APP_NAME);
-        System.out.println(VERSION);
-        System.out.println("=================================");
-        System.out.println("Application started successfully.");
+        // Hardcoded String (String Literal)
+        String word = "madam";
+
+        // Reverse the string
+        String reversed = "";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
+
+        // Check using if-else
+        if (word.equals(reversed)) {
+            System.out.println("The given word \"" + word + "\" is a Palindrome.");
+        } else {
+            System.out.println("The given word \"" + word + "\" is NOT a Palindrome.");
+        }
+
+        System.out.println("Program executed successfully.");
     }
 }
