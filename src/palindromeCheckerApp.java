@@ -33,6 +33,6 @@ public class palindromeCheckerApp {
             System.out.println("Result : The string is NOT a Palindrome.");
         }
 
-        System.out.println("Program executed successfully.");
+        System.out.println("Program executed successfully");
     }
 }
