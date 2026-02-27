@@ -19,5 +19,3 @@ public class palindromeCheckerApp {
         System.out.println("===================================\n");
     }
 }
-
-}
