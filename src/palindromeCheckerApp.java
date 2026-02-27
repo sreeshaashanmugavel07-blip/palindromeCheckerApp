@@ -1,38 +1,14 @@
+public class PalindromeCheckerApp {
 
-import java.util.Deque;
-import java.util.ArrayDeque;
-
-public class palindromeCheckerApp {
+    static final String APP_NAME = "Palindrome Checker App";
+    static final String VERSION = "Version 1.0";
 
     public static void main(String[] args) {
 
-        String input = "racecar";
-
-        Deque<Character> deque = new ArrayDeque<>();
-
-        for (int i = 0; i < input.length(); i++) {
-            deque.addLast(input.charAt(i));
-        }
-
-        boolean isPalindrome = true;
-        while (deque.size() > 1) {
-
-            char front = deque.removeFirst();
-            char rear  = deque.removeLast();
-
-            if (front != rear) {
-                isPalindrome = false;
-                break;
-            }
-        }
-        System.out.println("Input String : " + input);
-
-        if (isPalindrome) {
-            System.out.println("Result : The string is a Palindrome.");
-        } else {
-            System.out.println("Result : The string is NOT a Palindrome.");
-        }
-
-        System.out.println("Program executed successfully");
+        System.out.println("=================================");
+        System.out.println("Welcome to " + APP_NAME);
+        System.out.println(VERSION);
+        System.out.println("=================================");
+        System.out.println("Application started successfully.");
     }
 }
