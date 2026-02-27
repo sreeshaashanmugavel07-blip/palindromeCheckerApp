@@ -6,7 +6,7 @@ public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String input = "racecar";
+        String input = "madam";
 
         Deque<Character> deque = new ArrayDeque<>();
 
