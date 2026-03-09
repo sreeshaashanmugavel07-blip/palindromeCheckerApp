@@ -2,7 +2,7 @@
 import java.util.Deque;
 import java.util.ArrayDeque;
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     public static void main(String[] args) {
 
