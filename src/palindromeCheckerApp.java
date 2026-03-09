@@ -1,22 +1,41 @@
 /**
  * PalindromeCheckerApp
- * UC10: Case-Insensitive & Space-Ignored Palindrome
+ * UC11: Object-Oriented Palindrome Service
  */
 
 import java.util.Scanner;
 
-public class PalindromeCheckerApp {
+// PalindromeChecker class encapsulates the logic
+class PalindromeChecker {
 
-    // Recursive check
-    public static boolean isPalindromeRecursive(String str, int start, int end) {
-        if (start >= end) // Base condition
-            return true;
+    private String text;
 
-        if (str.charAt(start) != str.charAt(end))
-            return false;
-
-        return isPalindromeRecursive(str, start + 1, end - 1);
+    // Constructor
+    public PalindromeChecker(String text) {
+        this.text = text;
     }
+
+    // Method to check palindrome
+    public boolean checkPalindrome() {
+
+        String normalized = text.replaceAll("\\s+", "").toLowerCase();
+
+        int start = 0;
+        int end = normalized.length() - 1;
+
+        while (start < end) {
+            if (normalized.charAt(start) != normalized.charAt(end)) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+
+        return true;
+    }
+}
+
+public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
@@ -25,10 +44,10 @@ public class PalindromeCheckerApp {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
-        // Normalize: remove spaces and convert to lowercase
-        String normalized = input.replaceAll("\\s+", "").toLowerCase();
+        // Use PalindromeChecker class
+        PalindromeChecker checker = new PalindromeChecker(input);
 
-        if (isPalindromeRecursive(normalized, 0, normalized.length() - 1))
+        if (checker.checkPalindrome())
             System.out.println("The given string is a Palindrome.");
         else
             System.out.println("The given string is NOT a Palindrome.");
