@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     public static void main(String[] args) {
 
