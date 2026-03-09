@@ -6,7 +6,7 @@
 import java.util.Scanner;
 
 // PalindromeChecker class encapsulates the logic
-class PalindromeChecker {
+class palindromeChecker {
 
     private String text;
 
