@@ -50,7 +50,7 @@ class RecursiveStrategy implements PalindromeStrategy {
 }
 
 // PalindromeChecker with strategy
-class palindromeChecker {
+class PalindromeChecker {
     private PalindromeStrategy strategy;
     public PalindromeChecker(PalindromeStrategy strategy) {
         this.strategy = strategy;
@@ -60,7 +60,7 @@ class palindromeChecker {
     }
 }
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     public static void main(String[] args) {
 
