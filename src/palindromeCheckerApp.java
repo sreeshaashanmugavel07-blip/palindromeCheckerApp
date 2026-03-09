@@ -50,7 +50,7 @@ class RecursiveStrategy implements PalindromeStrategy {
 }
 
 // PalindromeChecker with strategy
-class PalindromeChecker {
+class palindromeChecker {
     private PalindromeStrategy strategy;
     public PalindromeChecker(PalindromeStrategy strategy) {
         this.strategy = strategy;
