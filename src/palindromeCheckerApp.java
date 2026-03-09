@@ -8,7 +8,7 @@ import java.util.Stack;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     public static void main(String[] args) {
 
