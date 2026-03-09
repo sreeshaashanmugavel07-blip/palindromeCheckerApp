@@ -1,13 +1,13 @@
 /**
  * PalindromeCheckerApp
- * UC9: Recursive Palindrome Checker
+ * UC10: Case-Insensitive & Space-Ignored Palindrome
  */
 
 import java.util.Scanner;
 
 public class PalindromeCheckerApp {
 
-    // Recursive function to check palindrome
+    // Recursive check
     public static boolean isPalindromeRecursive(String str, int start, int end) {
         if (start >= end) // Base condition
             return true;
@@ -25,7 +25,10 @@ public class PalindromeCheckerApp {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
-        if (isPalindromeRecursive(input, 0, input.length() - 1))
+        // Normalize: remove spaces and convert to lowercase
+        String normalized = input.replaceAll("\\s+", "").toLowerCase();
+
+        if (isPalindromeRecursive(normalized, 0, normalized.length() - 1))
             System.out.println("The given string is a Palindrome.");
         else
             System.out.println("The given string is NOT a Palindrome.");
