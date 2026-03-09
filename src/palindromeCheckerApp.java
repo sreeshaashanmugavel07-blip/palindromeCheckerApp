@@ -55,7 +55,7 @@ class DequeStrategy implements PalindromeStrategy {
 }
 
 // PalindromeChecker uses strategy
-class palindromeChecker {
+class PalindromeChecker {
 
     private PalindromeStrategy strategy;
 
@@ -68,7 +68,7 @@ class palindromeChecker {
     }
 }
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     public static void main(String[] args) {
 
