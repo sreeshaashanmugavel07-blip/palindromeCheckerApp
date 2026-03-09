@@ -15,7 +15,7 @@ class Node {
     }
 }
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     // Convert string to linked list
     public static Node createLinkedList(String str) {
