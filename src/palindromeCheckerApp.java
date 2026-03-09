@@ -6,7 +6,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     public static void main(String[] args) {
 
