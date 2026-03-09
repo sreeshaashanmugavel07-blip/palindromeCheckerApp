@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class PalindromeCheckerApp {
+public class palindromeCheckerApp {
 
     // Recursive check
     public static boolean isPalindromeRecursive(String str, int start, int end) {
